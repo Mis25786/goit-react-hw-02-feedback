@@ -1,0 +1,28 @@
+.Feedback {
+  margin-left: 150px;
+  margin-top: 150px;
+
+  padding: 20px;
+  /* text-align: center; */
+
+  display: inline-block;
+  border: 1px solid brown;
+}
+
+.Feedback__name {
+}
+
+button {
+  border-radius: 4px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.Feedback__btn {
+}
+
+.Feedback__statistics {
+}
+
+.Feedback__item {
+}
