@@ -1,9 +1,9 @@
-import Feedback from './Feedback/Feedback';
+import Section from './Section/Section';
 
 export const App = () => {
   return (
     <>
-      <Feedback />
+      <Section text="Pleace leave feedback" />
     </>
   );
 };

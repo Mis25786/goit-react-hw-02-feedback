@@ -1,4 +1,4 @@
-.Feedback {
+.Section {
   margin-left: 150px;
   margin-top: 150px;
 
@@ -9,7 +9,7 @@
   border: 1px solid brown;
 }
 
-.Feedback__name {
+.Section__name {
 }
 
 button {
@@ -18,11 +18,11 @@ button {
   cursor: pointer;
 }
 
-.Feedback__btn {
+.Section__btn {
 }
 
-.Feedback__statistics {
+.Section__statistics {
 }
 
-.Feedback__item {
+.Section__item {
 }
