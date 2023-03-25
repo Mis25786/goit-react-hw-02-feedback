@@ -31,8 +31,8 @@ class Section extends Component {
   // };
 
   countTotalFeedback = () => {
-    // const values = Object.values(this.state);
-    const values = this.state;
+    const values = Object.values(this.state);
+    // const values = this.state;
     console.log(values);
 
     let total = 0;
