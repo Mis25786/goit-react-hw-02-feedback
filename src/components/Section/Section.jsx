@@ -25,24 +25,28 @@ class Section extends Component {
     this.setState(prevState => ({ bad: prevState.bad + 1 }));
   };
 
-  // countTotalFeedback = () => {
-  //   let value = this.state;
-  //   console.log(value);
-  // };
-
   countTotalFeedback = () => {
-    const values = Object.values(this.state);
-    // const values = this.state;
-    console.log(values);
-
-    let total = 0;
-    console.log(total);
-    for (const value of values) {
-      total += value;
-    }
+    let total = this.state.good + this.state.neutral + this.state.bad;
+    return total;
   };
 
-  countPositiveFeedbackPercentage = () => {};
+  // countTotalFeedback = () => {
+  //   const values = Object.values(this.state);
+  //   // const values = this.state;
+  //   console.log(values);
+
+  //   let total = 0;
+  //   console.log(total);
+  //   for (const value of values) {
+  //     total += value;
+  //   }
+  // };
+
+  countPositiveFeedbackPercentage = () => {
+    let total = this.countTotalFeedback();
+    let percent = total ? Math.ceil((this.state.good / total) * 100) : 0;
+    return percent;
+  };
 
   render() {
     // console.log(this.state.good);
@@ -74,7 +78,7 @@ class Section extends Component {
           <p>Neutral:{this.state.neutral}</p>
           <p>Bad:{this.state.bad}</p>
           <p>Total:{this.countTotalFeedback}</p>
-          <p>Positive feedback:{}</p>
+          <p>Positive feedback:{this.countPositiveFeedbackPercentage}</p>
         </div>
 
         {/* <Statistics
