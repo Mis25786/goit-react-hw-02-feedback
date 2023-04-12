@@ -1,28 +1,7 @@
-.Section {
-  margin-left: 150px;
-  margin-top: 150px;
-
-  padding: 20px;
-  /* text-align: center; */
-
-  display: inline-block;
-  border: 1px solid brown;
-}
-
-.Section__name {
-}
-
-button {
-  border-radius: 4px;
-  background-color: #fff;
-  cursor: pointer;
-}
-
-.Section__btn {
-}
-
-.Section__statistics {
-}
-
-.Section__item {
+.title {
+  /* background: linear-gradient(-45deg, #fee864, #f5965e); */
+  background: black;
+  color: white;
+  text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px crimson,
+    0 0 35px crimson, 0 0 40px crimson, 0 0 50px crimson, 0 0 75px crimson;
 }

@@ -1,22 +1,36 @@
 import PropTypes from 'prop-types';
 import css from './FeedbackOptions.module.css';
 
-const FeedbackOptions = () => {
+const FeedbackOptions = ({ onLeaveFeedback }) => {
   return (
-    <div className="Section__btn">
-      <button type="button" onClick={this.handelIncrementGood}>
+    <div className={css}>
+      <button
+        type="button"
+        className={css.btn}
+        onClick={() => onLeaveFeedback('good')}
+      >
         Good
       </button>
-      <button type="button" onClick={this.handelIncrementNeutral}>
+      <button
+        type="button"
+        className={css.btn}
+        onClick={() => onLeaveFeedback('neutral')}
+      >
         Neutral
       </button>
-      <button type="button" onClick={this.handelIncrementBad}>
+      <button
+        type="button"
+        className={css.btn}
+        onClick={() => onLeaveFeedback('bad')}
+      >
         Bad
       </button>
     </div>
   );
 };
 
-FeedbackOptions.propTypes = {};
+FeedbackOptions.propTypes = {
+  onLeaveFeedback: PropTypes.func.isRequired,
+};
 
 export default FeedbackOptions;
